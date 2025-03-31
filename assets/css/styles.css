@@ -46,7 +46,7 @@ h1 {
 }
 #main-section h1 {
     color: #5595d1;
-    margin-top: 80px;
+    margin-top: 65px;
     margin-bottom: 35px;
 }
 #main-section img.logo {
@@ -55,15 +55,19 @@ h1 {
 #main-section .container {
     height: 100%;
 }
+.fig-wrapper {
+    position: relative; 
+    display: block;
+}
 .fig-main {
     width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     max-width: 800px;
     height: 100dvh;
-    background-color: #ffeb00;
-    padding: 105px 100px;
+    padding: 78px 100px;
     position: relative;
-    margin-left: -105px;
+    background-size: cover;
+    background-position-y: 100%;
+    background-image: url('../images/Forma\ 1.png');
 }
 
 
@@ -72,8 +76,6 @@ h1 {
     font-size: 24px;
     font-weight: 500;
 }
-
-
 
 #about-section {
     background-color: #ffeb00;
@@ -149,12 +151,24 @@ button:not(:disabled).btn:hover {
 #cta-section .video-wrapper {
     margin-top: 93px;
     display: flex;
+    border: 3px solid #222221;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
     cursor: pointer;
 }
-#cta-section .video-wrapper img {
+#cta-section .video-wrapper::after {
+    content: '';
+    width: 100%;
+    height: 100%;
     border-radius: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fffc3856;
+}
+#cta-section .video-wrapper img {
+    border-radius: inherit;
 }
 .video-wrapper .video-player {
     width: 90px;
@@ -183,18 +197,7 @@ button:not(:disabled).btn:hover {
     margin: 0 auto !important;
     background-color: transparent;
 }
-#cta-section .video-wrapper::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    border-radius: 24px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    background-color: #fffc3856;
 
-}
 .warning-banner {
     padding: 48px 0;
     background-color: #ffeb00;
@@ -270,6 +273,20 @@ footer {
 }
 footer p {
     margin: 0 !important;
+}
+#contato .contact-title {
+    font-size: 62px;
+    font-weight: 400;
+    color: #5595d1 !important;
+}
+#contato .mockup-img {
+    margin-left: -145px;
+}
+#contato .container {
+    max-width: 1300px !important;
+}
+.contact-title span {
+    color: #59595b;
 }
 /* 
 Loader customizado pego em https://css-loaders.com/line/#l8
