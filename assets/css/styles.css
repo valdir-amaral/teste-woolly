@@ -196,6 +196,12 @@ input:focus {
     outline: none;
     box-shadow: 0 0 0 .2rem #ffee8c56;
 }
+input.error-field {
+    border-color: red !important;
+}
+input.error-field:focus {
+    border-color: #ffee8c !important;
+}
 label {
     max-width: fit-content;
     margin-bottom: 15px;

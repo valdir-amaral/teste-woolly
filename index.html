@@ -58,6 +58,27 @@
                     <img src="./assets/images/tel-icon.png" alt="">
                     11 <b>99999-0000</b></p>
 
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                      </button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/QIPdMmgCWi0?si=olLwRfKwzR0aatAJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             
                 <a class="btn btn-primary" href="#contato">
@@ -83,34 +104,34 @@
                         <img src="./assets/images/Mockup.png" alt="">
                     </div>
                     <div class="col-lg-6">
-                        <form action="">
+                        <form>
                             <fieldset>
                                 <label for="name">Nome Completo:*</label>
-                                <input id="name" name="name" type="text">
+                                <input required id="name" name="name" type="text">
                             </fieldset>
                             
                             <fieldset>
                                 <label for="cnpj">CNPJ:*</label>
-                                <input id="cnpj" name="cnpj" type="text">
+                                <input required id="cnpj" name="cnpj" type="text">
                             </fieldset>
                             
                             <fieldset>
                                 <label for="email">E-mail:*</label>
-                                <input id="email" name="email" type="email">
+                                <input required id="email" name="email" type="email">
                             </fieldset>
 
                             <fieldset>
                                 <label for="phone">Telefone:*</label>
-                                <input id="phone" name="phone" type="tel">
+                                <input required id="phone" name="phone" type="tel">
                             </fieldset>
                             
                             
                             <fieldset>
                                 <label for="empresa">Empresa:*</label>
-                                <input id="empresa" name="empresa" type="text">
+                                <input required id="empresa" name="empresa" type="text">
                             </fieldset>
 
-                            <button class="btn submit-btn" type="submit">
+                            <button onclick="validateForm(event)" class="btn submit-btn" type="submit">
                                 <svg fill="#ffeb00" width="38" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                                 Entre em <b>contato</b>
                             </button>
@@ -128,6 +149,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
   
 </body>
