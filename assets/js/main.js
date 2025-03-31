@@ -87,7 +87,6 @@ function isFormValid() {
 }
 
 // Máscaras de input (CNPJ e Telefone)
-
 function formatCnpj(value) {
     value = value.replace(/\D/g, "");
     value = value.replace(/^(\d{2})(\d)/,"$1.$2");
@@ -106,4 +105,15 @@ function formatPhone(value) {
     value = value.substring(0, 15);
 
     return value;
+}
+
+
+function openVideoModal() {
+    let iframe = document.querySelector('iframe');
+    iframe.src = "https://www.youtube.com/embed/QIPdMmgCWi0?si=olLwRfKwzR0aatAJ&enablejsapi=1&autoplay=1"
+    
+    // Quando o modal fechar, destruir o vídeo para que não toque no background.
+    document.querySelector('.modal').addEventListener('hidden.bs.modal', () => {
+        iframe.src = "";
+    })
 }
