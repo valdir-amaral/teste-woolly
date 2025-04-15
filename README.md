@@ -1,4 +1,7 @@
-# TESTE WOOLLY FRONT-END JR
+# TESTE WOOLLY FRONT-END JR - Landing page
+
+![image](https://github.com/user-attachments/assets/b7804e11-6b64-43fc-bc31-8ba5bdb5a603)
+
 ## Instruções para o teste
 ### Objetivo
 Desenvolver uma landing page utilizando HTML, CSS e JavaScript, garantindo que o resultado final seja o mais fiel possível ao layout fornecido.
